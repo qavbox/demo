@@ -91,3 +91,6 @@ ul.myhmenu {
     background-color: #555;
     color: white;
 }
+
+ #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;     background: aliceblue;}
+ #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; background: aquamarine;}
