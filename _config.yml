@@ -1,2 +1,4 @@
 name: SKPatro
 markdown: kramdown
+
+theme: jekyll-theme-minimal
