@@ -1,0 +1,35 @@
+---
+layout: default  
+title: Browser Windows  
+---
+
+<form id="form1">
+<fieldset id="regform"><legend><b>[Dummy Controls]</b></legend>
+<div style="text-align: center;" class="newtb"> 
+<p>Click below to open link in new tab</p>
+<a href="http://www.qavalidation.com/" target="_blank"><input type="button" class="btn" name="NewTab" value="New Tab"/></a> 
+</div>
+
+<br/><br/>
+
+<div style="text-align: center;" class="newtb"> 
+<p>Click below to open link in new browser window</p>
+<a href="JavaScript:newPopup('http://qavalidation.com/about-me/');"><input type="button" class="btn" name="NewWindow" value="New Window"/></a> 
+<script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
+</div>
+
+<br/><br/>
+
+<div style="text-align: center;" class="download"> 
+<p>Click below to download a file</p>
+<a href="http://qavalidation.com/wp-content/files/qav_test.txt" download><input class="btn" value="Download" type="button"></a>
+</div>
+
+</fieldset>
+</form>
