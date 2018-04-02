@@ -9,7 +9,7 @@ title: iframes
 
 <a href="http://qavalidation.com/about-me/" target="_blank" rel="noopener noreferrer">Blogger</a><br/><br/>
 Frame1<br/><br/>
-<iframe width="200px" height="80px" id="Frame1" name="Framename1" src="about:blank"></iframe><br/><br/>
+<iframe width="200px" height="100px" id="Frame1" name="Framename1" src="about:blank"></iframe><br/><br/>
 Frame2<br/><br/>
 <iframe width="200px" height="60px" id="Frame2" src="about:blank"></iframe>
 <script type="text/javascript">
@@ -21,7 +21,7 @@ doc.close();
 <script type="text/javascript">
 var doc1 = document.getElementById('Frame2').contentWindow.document;
 doc1.open();
-doc1.write('<body><a href="http://qavalidation.com/category/softwaretesting/" target="_blank">Category3</a><br/></body>');
+doc1.write('<body><a href="http://qavalidation.com/category/softwaretesting/" target="_blank">Category3</a></body>');
 doc1.close();
 </script>
 </form>
