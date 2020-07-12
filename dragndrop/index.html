@@ -20,6 +20,17 @@ title: DragnDrop
     });
   } );
   </script>
+
+
+<div class="slider1">
+    <input type="range" min="0" max="100" step="1" value="0" onchange="showValue(this.value)">
+    &nbsp;
+    <span id="range">2</span>
+  </div>
+
+<script type="text/javascript">
+  function showValue(newValue) { $("#range").html(newValue); }
+</script>
  
 
  <form id="form1" >
