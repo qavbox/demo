@@ -22,11 +22,7 @@ title: DragnDrop
   </script>
 
 
-<div class="slider1">
-    <input type="range" min="0" max="100" step="1" value="0" onchange="showValue(this.value)">
-    &nbsp;
-    <span id="range">2</span>
-  </div>
+
 
 <script type="text/javascript">
   function showValue(newValue) { $("#range").html(newValue); }
@@ -45,6 +41,14 @@ title: DragnDrop
 <div id="droppable" class="ui-widget-header">
   <p>Drop here</p>
 </div>
+  
+  
+  
+  <div class="slider1">
+    <input type="range" min="0" max="100" step="1" value="0" onchange="showValue(this.value)">
+    &nbsp;
+    <span id="range">2</span>
+  </div>
  
  </fieldset>
  </form>
