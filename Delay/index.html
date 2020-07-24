@@ -9,16 +9,16 @@ title: Delay elements
 
         <label>Click below button to display text after 5 sec</label>
         <br>
-     
+        <br>
         <input class="btn" name="commit" type="button" value="Click me!" onclick="showDiv()">
     </div>
     <br>
-    <div id="two"></div>
+    <p id="two"></p>
     
     <script type="text/javascript">
         function showDiv() {
    
-             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here" }, 5000);
+             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" }, 5000);
         }
     </script>
             
