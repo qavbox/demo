@@ -16,13 +16,9 @@ title: Delay elements
     
     <script type="text/javascript">
         function showDiv() {
-            div = document.getElementById('two');
-             setTimeout(show, 5000);
+   
+             setTimeout(function(){ document.getElementById('text').innerHTML = "I am here" }, 5000);
         }
-  
-        show = function(){
-        div.innerHTML = "I appeared after 5 sec";
-      };
     </script>
             
 </fieldset>
