@@ -1,0 +1,27 @@
+---
+layout: default  
+title: Delay elements 
+---
+
+<form id="form1">
+<fieldset id="regform"><legend><b>[Dummy Controls]</b></legend>
+    <div id="one">
+        <div id="tow">
+            I appeared after 5 sec
+        </div>
+        <label>Click below button to display text after 5 sec</label>
+        <button onclick="javascript:showDiv();">Click me!</button>
+    </div>
+    <script type="text/javascript">
+        function showDiv() {
+        setTimeout(show, 5000);
+            div = document.getElementById('tow');
+            
+        }
+        
+        show = function(){
+        div.style.display = "block";
+      };
+    </script>
+</fieldset>
+</form>
