@@ -12,7 +12,7 @@ title: Delay elements
         <button onclick="javascript:showDiv();">Click me!</button>
     </div>
     <br>
-    <div id="two" style="display:none">I appeared after 5 sec</div>
+    <div id="two"></div>
     
     <script type="text/javascript">
         function showDiv() {
@@ -21,7 +21,7 @@ title: Delay elements
         }
   
         show = function(){
-        div.style.display = "block";
+        div.innerHTML = "I appeared after 5 sec";
       };
     </script>
             
