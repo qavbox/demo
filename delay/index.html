@@ -1,0 +1,26 @@
+---
+layout: default  
+title: Delay elements 
+---
+
+<form id="form1">
+<fieldset id="regform"><legend><b>[Dummy Controls]</b></legend>
+    <div id="one">
+
+        <label>Click below button to display text after 5 sec</label>
+        <br>
+        <br>
+        <input class="btn" name="commit" type="button" value="Click me!" onclick="showDiv()">
+    </div>
+    <br>
+    <p id="two"></p>
+    
+    <script type="text/javascript">
+        function showDiv() {
+   
+             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" }, 5000);
+        }
+    </script>
+            
+</fieldset>
+</form>
