@@ -30,6 +30,11 @@ table#table01 {
 	margin-right: 25px;
 }
 
+._links p{
+	color:#4aa1ff;
+	text-decoration:none;
+}
+
 input[type=text]
 {
 	padding:8px;
