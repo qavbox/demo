@@ -35,12 +35,15 @@ table#table01 {
 	text-decoration:none;
 }
 
-input[type=text]
-{
-	padding:8px;
-	display:block;
-	border-bottom:1px solid #ccc;
-	overflow:visible;
+input[type=text], select
+{	
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[class=btn] {
