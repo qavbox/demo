@@ -24,6 +24,12 @@ table#table01 {
     color: white;
 }
 
+
+._links p{
+	display:inline-block;
+	margin-right: 25px;
+}
+
 input[type=text]
 {
 	padding:8px;
