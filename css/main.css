@@ -30,11 +30,6 @@ table#table01 {
 	margin-right: 25px;
 }
 
-._links p{
-	color:#4aa1ff;
-	text-decoration:none;
-}
-
 input[type=text], select
 {	
     width: 100%;
@@ -63,7 +58,9 @@ font-weight:bold;
 
 a{
     font-weight: 700;
-	font-size:large;
+    color:#4aa1ff;
+    text-decoration:none;
+    font-size:larger;
 }
 
 form#form1 {
