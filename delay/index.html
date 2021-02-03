@@ -18,7 +18,7 @@ title: Delay elements
 
 <div id="message_display" style="display:none;">Welcome to the Sourcecodester Tutorials!</div>
  
-<script src="jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
 	//When the page has loaded.
 	$( document ).ready(function(){
@@ -35,7 +35,7 @@ title: Delay elements
              setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" }, 5000);
         }
         
-             setTimeout(function(){ document.getElementById('delay').innerHTML = "I am here!" }, 5000);
+             setTimeout(function(){ document.getElementById('delay').style.display = "" }, 5000);
 
     </script>
             
