@@ -14,9 +14,10 @@ title: Delay elements
     <br>
     <p id="two"></p>
 
-    <p id="delay">Hey this is saruque</p>
+	<div id="mydiv">
+	</div>
 
-<div id="message_display" style="display:none;">I appeared after 5sec</div>
+<div id="message_display1" style="display:none;">I appeared after 5sec</div>
  
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
@@ -31,12 +32,13 @@ title: Delay elements
     
     <script type="text/javascript">
         function showDiv() {
-   
-             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" }, 5000);
+             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" ;
+	     var para = document.createElement("P");
+             para.id="delay"
+             para.innerHTML = "I appeared after 5 sec";
+             document.getElementById("mydiv").appendChild(para);}, 5000);
         }
         
-             setTimeout(function(){ document.getElementById('delay').style.display = "" }, 5000);
-
     </script>
             
 
