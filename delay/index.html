@@ -16,6 +16,18 @@ title: Delay elements
 
     <p id="delay">Hey this is saruque</p>
 
+<div id="message_display" style="display:none;">Welcome to the Sourcecodester Tutorials!</div>
+ 
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+	//When the page has loaded.
+	$( document ).ready(function(){
+		$('#message_display').fadeIn('slow', function(){
+		$('#message_display').delay(0).fadeOut(); 
+		});
+	});
+</script>
+
     
     <script type="text/javascript">
         function showDiv() {
@@ -23,9 +35,8 @@ title: Delay elements
              setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" }, 5000);
         }
         
-          $(document).ready(function(){
-    $('#delay').hide().delay(5000).fadeIn('slow');
-  });
+             setTimeout(function(){ document.getElementById('delay').innerHTML = "I am here!" }, 5000);
+
     </script>
             
 
