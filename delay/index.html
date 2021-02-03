@@ -13,12 +13,19 @@ title: Delay elements
     </div>
     <br>
     <p id="two"></p>
+
+    <p id="delay">Hey this is saruque</p>
+
     
     <script type="text/javascript">
         function showDiv() {
    
              setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" }, 5000);
         }
+        
+          $(document).ready(function(){
+    $('#delay').hide().delay(5000).fadeIn('slow');
+  });
     </script>
             
 
