@@ -22,8 +22,8 @@ title: Delay elements
 <script>
 	//When the page has loaded.
 	$( document ).ready(function(){
-		$('#message_display').fadeIn('slow', function(){
-		$('#message_display').delay(1000).fadeOut(); 
+		$('#message_display').fadeOut('slow', function(){
+		$('#message_display').delay(1000).fadeIn(); 
 		});
 	});
 </script>
