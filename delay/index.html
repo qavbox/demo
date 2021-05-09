@@ -11,7 +11,7 @@ title: Delay elements
         <br>
         <input class="btn" name="commit" type="button" value="Click me!" onclick="showDiv()">
 	<br>
-	<p id="two"></p>
+	<h2 id="two"></h2>
     </div>
     <div id="oneMore">
     	        <label>Click below button to display button & text after 5 sec</label>
@@ -28,16 +28,21 @@ title: Delay elements
     
     <script type="text/javascript">
         function showDiv() {
-             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" ;}, 5000);
+             setTimeout(function(){ 
+		     var para1 = document.getElementById('two')
+	     	     para1.innerHTML = "I am here!" ;
+		     para1.style.color = "#ff0000";
+		     }, 5000);
         }
         
     </script>
 <script type="text/javascript">
         function showDiv1() {
         	setTimeout(function(){
-	     var para = document.createElement("P");
+	     var para = document.createElement("h2");
              para.id="delay"
              para.innerHTML = "I appeared after 5 sec";
+	     para.style.color = "#ff0000";
              document.getElementById("mydiv").appendChild(para);}, 5000);
         }
         
