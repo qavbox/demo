@@ -4,35 +4,37 @@ title: Delay elements
 ---
 
 
-    <div id="one">
+<div id="one">
 
         <label>Click below button to display text after 5 sec</label>
         <br>
         <br>
         <input class="btn" name="commit" type="button" value="Click me!" onclick="showDiv()">
+	<br>
+	<p id="two"></p>
     </div>
-    <br>
-    <p id="two"></p>
+    <div id="oneMore">
+    	        <label>Click below button to display button & text after 5 sec</label>
+ <br>
+        <br>
+        <input class="btn" name="commit1" type="button" value="Try me!" onclick="showDiv1()">
 
-	<div id="mydiv">
-	</div>
+	<div id="mydiv"></div>
+    </div>
 
-<div id="message_display1" style="display:none;">I appeared after 5sec</div>
  
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>
-	//When the page has loaded.
-	$( document ).ready(function(){
-		$('#message_display').fadeOut('slow', function(){
-		$('#message_display').delay(1000).fadeIn(); 
-		});
-	});
-</script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
     
     <script type="text/javascript">
         function showDiv() {
-             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" ;
+             setTimeout(function(){ document.getElementById('two').innerHTML = "I am here!" ;}, 5000);
+        }
+        
+    </script>
+<script type="text/javascript">
+        function showDiv1() {
+        	setTimeout(function(){
 	     var para = document.createElement("P");
              para.id="delay"
              para.innerHTML = "I appeared after 5 sec";
