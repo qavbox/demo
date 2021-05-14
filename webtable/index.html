@@ -20,27 +20,28 @@ title: webtable
 <td>Functional</td>
 <td>QTP</td>
 <td>Bugzilla</td>
-  <td><input id="btn" type="button" onclick="change_text()" value="Delete"></td>
+  <td><input id="btn" type="button" onclick="change_text(this)" value="Delete"></td>
 </tr>
 <tr>
 <td><input type="checkbox" /></td>
 <td>GUI</td>
 <td><a href="https://www.selenium.dev/">Selenium</a></td>
 <td>TFS</td>
-  <td><input id="btn" type="button" onclick="change_text()" value="Delete"></td>
+  <td><input id="btn" type="button" onclick="change_text(this)" value="Delete"></td>
 </tr>
 <tr>
 <td><input type="checkbox" /></td>
 <td>Performance</td>
 <td>Coded UI</td>
 <td>QC ALM</td>
-  <td><input id="btn" type="button" onclick="change_text()" value="Delete"></td>
+  <td><input id="btn" type="button" onclick="change_text(this)" value="Delete"></td>
 </tr>
 </tbody>
 </table>
 
 <script>
-function change_text(){
-    document.getElementById("btn").value = "Deleted";
+function change_text(obj){
+    // document.getElementById("btn").value = "Deleted";
+    obj.value="Deleted";
 }
 </script>
