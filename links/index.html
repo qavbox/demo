@@ -23,6 +23,21 @@ function newPopup(url) {
 </div>
 
 <br/><br/>
+<input type="button" class="btn" name="multiple" value="Multi Window" onclick="pop()"/>
+<script type="text/javascript" src='JS/jquery-1.9.0.min.js'></script>
+<script type="text/javascript">
+  function pop() {
+
+      window.open('https://qavbox.github.io/demo/links/'
+      	,'popUpWindow','height=400,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+
+      window.open('https://qavbox.github.io/'
+      	,'_blank','height=300,width=400,left=20,top=30,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+
+  }
+</script>
+
+<br/><br/>
 
 <div style="text-align: center;" class="download"> 
 <p>Click below to download a file</p>
