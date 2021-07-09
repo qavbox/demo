@@ -1,23 +1,23 @@
-#table01 {
+table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-table#table01 {
+table {
         margin-left: auto;
     margin-right: auto;
 }
 
-#table01 td, #table01 th {
+table td, table th {
     border: 1px solid #ddd;
     padding: 8px;
 	text-align:center;
 }
 
-#table01 tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even){background-color: #f2f2f2;}
 
-#table01 tr:hover {background-color: #ddd;}
+table tr:hover {background-color: #ddd;}
 
-#table01 th {
+table th {
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #3396FF;
