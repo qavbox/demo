@@ -1,0 +1,56 @@
+---
+layout: default  
+title: shadow    
+---
+
+  <h1>Shadow Root</h1>
+    <script>
+class MyWebComponent_open extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
+    connectedCallback() {
+        this.shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
+    }
+}
+
+
+window.customElements.define("my-open-component", MyWebComponent_open);
+// Create component
+const el = document.createElement('my-open-component');
+document.body.appendChild(el);
+
+class MyWebComponent_close extends HTMLElement {
+    constructor() {
+        super();
+        this._root = this.attachShadow({ mode: "closed" });
+    }
+    connectedCallback() {
+        this._root.innerHTML = '<div>Close shadow with ref=_root</div><input type="text"></input><br>'
+    }
+}
+window.customElements.define("my-close-component", MyWebComponent_close);
+// Create component
+const el1 = document.createElement('my-close-component');
+document.body.appendChild(el1);
+
+
+class MyWebComponent_close1 extends HTMLElement {
+    constructor() {
+        super();
+        let el = this.attachShadow({ mode: "closed" });
+        el.innerHTML = '<div>Close shadow with no ref</div><input type="text"></input><br>';
+    }
+    connectedCallback() {
+        this.shadowRoot.innerHTML = 
+        '<div>Close shadow with no ref</div><input type="text"></input><br>'
+    }
+}
+window.customElements.define("my-close-component1", MyWebComponent_close1);
+// Create component
+const el2 = document.createElement('my-close-component1');
+document.body.appendChild(el2);
+</script>
+<br/>
+For nested shadow root, refer <a href="https://shop.polymer-project.org/">https://shop.polymer-project.org/</a>
