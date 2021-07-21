@@ -41,7 +41,7 @@ const el1 = document.createElement('my-close-component');
 class MyWebComponent_close1 extends HTMLElement {
     constructor() {
         super();
-        thid.attachShadow({ mode: "closed" }).innerHTML = '<div>Close shadow with no ref</div><input type="text"></input><br>';
+        this.attachShadow({ mode: "closed" }).innerHTML = '<div>Close shadow with no ref</div><input type="text"></input><br>';
     }
     connectedCallback() {
         this.shadowRoot.innerHTML = 
