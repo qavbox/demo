@@ -8,10 +8,10 @@ title: shadow
 class MyWebComponent_open extends HTMLElement {
     constructor() {
         super();
-        container.attachShadow({ mode: "open" });
+        $('.container').attachShadow({ mode: "open" });
     }
     connectedCallback() {
-        container.shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
+        $('.container').shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
     }
 }
 
@@ -24,10 +24,10 @@ document.body.appendChild(el);
 class MyWebComponent_close extends HTMLElement {
     constructor() {
         super();
-        this._root = this.attachShadow({ mode: "closed" });
+        $('.container')._root = this.attachShadow({ mode: "closed" });
     }
     connectedCallback() {
-        this._root.innerHTML = '<div>Close shadow with ref=_root</div><input type="text"></input><br>'
+        $('.container')._root.innerHTML = '<div>Close shadow with ref=_root</div><input type="text"></input><br>'
     }
 }
 window.customElements.define("my-close-component", MyWebComponent_close);
@@ -39,7 +39,7 @@ document.body.appendChild(el1);
 class MyWebComponent_close1 extends HTMLElement {
     constructor() {
         super();
-        let el = this.attachShadow({ mode: "closed" });
+        let el = $('.container').attachShadow({ mode: "closed" });
         el.innerHTML = '<div>Close shadow with no ref</div><input type="text"></input><br>';
     }
     connectedCallback() {
