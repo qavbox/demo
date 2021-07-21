@@ -18,7 +18,7 @@ class MyWebComponent_open extends HTMLElement {
 
 window.customElements.define("my-open-component", MyWebComponent_open);
 // Create component
-const el = document.createElement('my-open-component');
+const el = $('.container').createElement('my-open-component');
 document.body.appendChild(el);
 
 class MyWebComponent_close extends HTMLElement {
