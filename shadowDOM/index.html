@@ -8,10 +8,10 @@ title: shadow
 class MyWebComponent_open extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
+        container.attachShadow({ mode: "open" });
     }
     connectedCallback() {
-        this.shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
+        container.shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
     }
 }
 
