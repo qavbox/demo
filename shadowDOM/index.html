@@ -8,10 +8,10 @@ title: shadow
 class MyWebComponent_open extends HTMLElement {
     constructor() {
         super();
-        $('.container').attachShadow({ mode: "open" });
+        this.attachShadow({ mode: "open" });
     }
     connectedCallback() {
-        $('.container').shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
+        this.shadowRoot.innerHTML = '<div>Open shadow</div><input type="text"></input><br>'
     }
 }
 
@@ -19,7 +19,8 @@ class MyWebComponent_open extends HTMLElement {
 window.customElements.define("my-open-component", MyWebComponent_open);
 // Create component
 const el = $('.container').createElement('my-open-component');
-document.body.appendChild(el);
+//document.body.appendChild(el);
+document.querySelector('.container').appendChild(el);
 
 class MyWebComponent_close extends HTMLElement {
     constructor() {
@@ -33,7 +34,8 @@ class MyWebComponent_close extends HTMLElement {
 window.customElements.define("my-close-component", MyWebComponent_close);
 // Create component
 const el1 = document.createElement('my-close-component');
-document.body.appendChild(el1);
+//document.body.appendChild(el1);
+      document.querySelector('.container').appendChild(el1);
 
 
 class MyWebComponent_close1 extends HTMLElement {
@@ -50,7 +52,8 @@ class MyWebComponent_close1 extends HTMLElement {
 window.customElements.define("my-close-component1", MyWebComponent_close1);
 // Create component
 const el2 = document.createElement('my-close-component1');
-document.body.appendChild(el2);
+//document.body.appendChild(el2);
+      document.querySelector('.container').appendChild(el2);
 </script>
 <br/>
 For nested shadow root, refer <a href="https://shop.polymer-project.org/">https://shop.polymer-project.org/</a>
