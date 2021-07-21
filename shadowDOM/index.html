@@ -25,10 +25,10 @@ document.querySelector('.container').appendChild(el);
 class MyWebComponent_close extends HTMLElement {
     constructor() {
         super();
-        $('.container')._root = this.attachShadow({ mode: "closed" });
+        this._root = this.attachShadow({ mode: "closed" });
     }
     connectedCallback() {
-        $('.container')._root.innerHTML = '<div>Close shadow with ref=_root</div><input type="text"></input><br>'
+        this._root.innerHTML = '<div>Close shadow with ref=_root</div><input type="text"></input><br>'
     }
 }
 window.customElements.define("my-close-component", MyWebComponent_close);
