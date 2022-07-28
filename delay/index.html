@@ -7,33 +7,36 @@ title: Delay elements
 <div id="one">
 
         <label>Click below button to display text after 5 sec</label>
-        <br>
+   
         <br>
         <input class="btn" name="commit" type="button" value="Click me!" onclick="showDiv()">
 	<br>
+	  <br>
 	<h2 id="two"></h2>
     </div>
     <div id="oneMore">
     	        <label>Click below button to display button (id=delay) & text after 5 sec</label>
  <br>
-        <br>
+        
         <input class="btn" name="commit1" type="button" value="Try me!" onclick="showDiv1()">
 
 	<br>
-
+  <br>
  
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 	     <label>Click below button to display loader, then hide and display text after 5 sec</label>
  <br>
-        <br>
+        
 
 <input class="btn" id="loaderStart" type="button" value="Start" onclick="delayTimeloader()">
-  </input>
 
+<br>
+  <br>
 	<div id="mydiv"></div>
     </div>
 
-    
+
+    	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         function showDiv() {
              setTimeout(function(){ 
@@ -59,7 +62,7 @@ title: Delay elements
 <script>
   function delayTimeloader(){
       //$('#loaderStart').hide();
-      $('#loaderStart').after("<div id='loader'>Loading...</div>");
+      $('#loaderStart').after("<br><br><div id='loader'><b>Loading...</b></div>");
       setTimeout(function() {
    var para = document.createElement("h2");
              para.id="loaderdelay"
