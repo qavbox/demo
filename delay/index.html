@@ -25,6 +25,13 @@ title: Delay elements
  
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
+<input class="btn" id="loaderStart" type="button" value="StartLoading" onclick="delayTimeloader()">
+  </input>
+
+<div id="finish" style="display:none">
+    <h4>Hello World!</h4>
+  </div>
+
     
     <script type="text/javascript">
         function showDiv() {
@@ -48,4 +55,16 @@ title: Delay elements
         
     </script>
             
+<script>
+  function delayTimeloader(){
+      //$('#loaderStart').hide();
+      $('#loaderStart').after("<div id='loading'>Loading...</div>");
+      setTimeout(function() {
+ 	var para = document.createElement("h2");
+             para.id="loaderdelay"
+             para.innerHTML = "I appeared after 5 sec loading";
+	     para.style.color = "#ff0000";
+             document.getElementById("mydiv").appendChild(para);}, 5000);
+    }
 
+</script>
